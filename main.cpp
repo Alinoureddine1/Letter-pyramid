@@ -15,6 +15,15 @@ int main() {
 	for (int i = 1; i <= x; i++) {
 		cout << setw(ws) << right;
 
+		for (int j = 0; j < i; j++) {
+			cout << user[j];
+        };
+
+		if (i > 1) {
+			for (int k = i - 2; k >= 0; k--) {
+				cout << user[k];
+			};
+
 		cout << endl;
 		ws--;
 	}
