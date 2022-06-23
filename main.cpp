@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include <iomanip>
 #include <string>
@@ -9,6 +10,8 @@ int main() {
 	cout << "Choose a string: ";
 	cin >> user;
 	int x = (int)user.size();
+	int ws = x;
+
 
 
 
@@ -17,16 +20,18 @@ int main() {
 
 		for (int j = 0; j < i; j++) {
 			cout << user[j];
-        };
+		};
 
 		if (i > 1) {
 			for (int k = i - 2; k >= 0; k--) {
 				cout << user[k];
 			};
 
+
+		};
+
 		cout << endl;
 		ws--;
-	}
 
-
+	};
 }
